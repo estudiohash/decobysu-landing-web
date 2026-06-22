@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- ================================================
+       SEO BÁSICO
+       ================================================
+       ⚠️  ACTUALIZAR cuando se defina el dominio final:
+           - Reemplazar "https://www.nombreempresa.com.ar" por la URL real
+           - Reemplazar el contenido de og:image por la URL absoluta de la imagen
+             definitiva (mínimo 1200×630 px, formato JPG/PNG)
+       ================================================ -->
+
+  <!-- Title
+       Formato recomendado: Keyword principal | Nombre de Empresa
+       Máximo 60 caracteres. -->
+  <title>[Servicio Principal] en [Ciudad] | [Nombre de Empresa]</title>
+
+  <!-- Meta description
+       Máximo 155 caracteres. Debe incluir localidad y servicios principales. -->
+  <meta name="description" content="[Descripción Institucional]. Especialistas en [Servicio 1], [Servicio 2], [Servicio 3] y [Servicio 4]. [Cantidad] reseñas ⭐ [Puntaje] en Google." />
+
+  <!-- Robots — indexar y seguir enlaces -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical URL
+       ⚠️  ACTUALIZAR con el dominio definitivo antes de publicar. -->
+  <link rel="canonical" href="https://www.nombreempresa.com.ar/" />
+
+  <!-- ================================================
+       OPEN GRAPH (Facebook, WhatsApp, LinkedIn, Telegram, etc.)
+       ================================================
+       ⚠️  ACTUALIZAR:
+           - og:url        → dominio real
+           - og:image      → URL absoluta de imagen real (1200×630 px mínimo)
+       ================================================ -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:locale"      content="es_AR" />
+  <meta property="og:site_name"   content="[Nombre de Empresa] — [Descripción Institucional corta]" />
+  <meta property="og:title"       content="[Servicio Principal] en [Ciudad] | [Nombre de Empresa]" />
+  <meta property="og:description" content="[Descripción Institucional]. Especialistas en [Servicio 1], [Servicio 2], [Servicio 3] y más. [Cantidad] reseñas ⭐ [Puntaje] en Google." />
+  <meta property="og:url"         content="https://www.nombreempresa.com.ar/" />
+  <!-- ⚠️  Reemplazar la siguiente línea con la URL absoluta de la imagen real -->
+  <meta property="og:image"       content="https://www.nombreempresa.com.ar/img/og-cover.jpg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt"   content="[Nombre de Empresa] — [Descripción Institucional corta]" />
+
+  <!-- ================================================
+       TWITTER CARDS
+       ================================================
+       summary_large_image muestra la imagen a pantalla completa en Twitter/X.
+       ⚠️  ACTUALIZAR:
+           - twitter:site   → arroba de la cuenta oficial en X
+                              (si no hay cuenta, eliminar esta línea)
+           - twitter:image  → misma URL de og:image
+       ================================================ -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="[Servicio Principal] en [Ciudad] | [Nombre de Empresa]" />
+  <meta name="twitter:description" content="[Descripción Institucional]. Especialistas en [Servicio 1], [Servicio 2] y más. ⭐ [Puntaje] en Google." />
+  <!-- ⚠️  Reemplazar con URL absoluta de imagen real -->
+  <meta name="twitter:image"       content="https://www.nombreempresa.com.ar/img/og-cover.jpg" />
+  <!-- ⚠️  Reemplazar "@HandleEmpresa" por el handle real o eliminar si no hay cuenta -->
+  <meta name="twitter:site"        content="@HandleEmpresa" />
+
+  <!-- ================================================
+       FIN SEO
+       ================================================ -->
+
+  <!-- ================================================
+       FAVICON
+       ================================================
+       SVG escala perfecto a cualquier tamaño (pestaña, bookmark, homescreen).
+       ⚠️  ACTUALIZAR (opcional): si el cliente entrega un logo SVG definitivo,
+           reemplazar img/favicon.svg por ese archivo manteniendo el mismo nombre.
+       ================================================ -->
+  <link rel="icon"             href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="img/favicon.svg" />
+  <!-- <link rel="icon" href="favicon.ico" sizes="32x32" /> -->  <!-- ⚠️ Opcional: agregar favicon.ico legacy -->
+
+  <!-- ================================================
+       SCHEMA.ORG — LocalBusiness
+       ================================================
+       Datos estructurados para Rich Results y Knowledge Panel.
+
+       ⚠️  CAMPOS QUE DEBEN ACTUALIZARSE antes de publicar en producción:
+
+           @type        → cambiar según el rubro (e.g. "LegalService", "MedicalBusiness", "Restaurant"…)
+           name         → nombre real de la empresa
+           description  → descripción real del negocio
+           url          → dominio definitivo
+           telephone    → número con formato internacional
+           email        → correo de contacto real
+           address      → dirección real
+           geo          → coordenadas GPS reales (obtener desde Google Maps)
+           openingHours → días y horarios reales de atención
+           sameAs       → URLs reales de perfiles sociales
+           aggregateRating → actualizar con el número real de reseñas
+           image        → URL absoluta de imagen real
+           areaServed   → ajustar según cobertura geográfica real
+       ================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness"],
+    "name": "[Nombre de Empresa]",
+    "description": "[Descripción Institucional completa del negocio]",
+    "url": "https://www.nombreempresa.com.ar/",
+    "logo": "https://www.nombreempresa.com.ar/img/favicon.svg",
+    "image": "https://www.nombreempresa.com.ar/img/og-cover.jpg",
+    "telephone": "+54[CÓDIGO ÁREA][NÚMERO]",
+    "email": "contacto@nombreempresa.com.ar",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[Calle y Número, Piso/Dpto]",
+      "addressLocality": "[Ciudad]",
+      "addressRegion": "[Provincia]",
+      "addressCountry": "AR",
+      "postalCode": "[CP]"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "[LATITUD]",
+      "longitude": "[LONGITUD]"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "areaServed": [
+      { "@type": "City", "name": "[Ciudad Principal]" },
+      { "@type": "State", "name": "[Provincia]" }
+    ],
+    "priceRange": "$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "[PUNTAJE]",
+      "reviewCount": "[CANTIDAD]",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "sameAs": [
+      "https://www.google.com/maps?cid=PLACEHOLDER"
+    ]
+  }
+  </script>
+  <!-- ================================================
+       FIN SCHEMA.ORG
+       ================================================ -->
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Alex+Brush&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <a href="#inicio" class="header__logo">
+        <div class="logo__text">
+          <span class="logo__name">Deco <span class="logo__script">by Su</span></span>
+          <span class="logo__subtitle">Decoración de Eventos</span>
+        </div>
+      </a>
+
+      <nav class="header__nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">INICIO</a></li>
+          <li><a href="#nosotros" class="nav__link">NOSOTROS</a></li>
+          <li><a href="#areas" class="nav__link">SERVICIOS</a></li>
+          <li><a href="#articulos" class="nav__link">ARTÍCULOS</a></li>
+          <li><a href="#contacto" class="nav__link">CONTACTO</a></li>
+        </ul>
+      </nav>
+
+      <a href="https://wa.me/54XXXXXXXXXX" class="btn btn--whatsapp header__cta" target="_blank" rel="noopener">
+        <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.556 4.118 1.528 5.845L0 24l6.335-1.502A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.371l-.36-.213-3.728.884.938-3.627-.234-.373A9.818 9.818 0 1112 21.818z"/>
+        </svg>
+        WHATSAPP
+      </a>
+
+      <button class="header__burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="inicio">
+      <div class="hero__overlay"></div>
+      <div class="hero__bg">
+        <!-- Placeholder background image -->
+        <div class="hero__img-placeholder" aria-hidden="true"></div>
+      </div>
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__heading">
+            Creamos momentos<br>
+            <span class="hero__heading-accent">inolvidables.</span>
+          </h1>
+          <p class="hero__sub">
+            Diseñamos y ambientamos eventos únicos que reflejan tu estilo
+            y superan tus expectativas. Nos ocupamos de cada detalle
+            para que solo disfrutes.
+          </p>
+          <a href="https://wa.me/54XXXXXXXXXX" class="btn btn--whatsapp hero__cta" target="_blank" rel="noopener">
+            <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.556 4.118 1.528 5.845L0 24l6.335-1.502A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.371l-.36-.213-3.728.884.938-3.627-.234-.373A9.818 9.818 0 1112 21.818z"/>
+            </svg>
+            CONSULTAR POR WHATSAPP
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ÁREAS / SERVICIOS ==================== -->
+    <section class="areas" id="areas">
+      <div class="container">
+        <p class="section__eyebrow">NUESTROS SERVICIOS</p>
+        <h2 class="section__title">¿En qué podemos ayudarte?</h2>
+        <div class="areas__grid">
+
+          <!-- 1. Cumpleaños -->
+          <article class="area-card">
+            <div class="area-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Torta con velas -->
+                <rect x="6" y="22" width="28" height="12" rx="3" stroke="#E36B13" stroke-width="1.8"/>
+                <path d="M6 28h28" stroke="#E36B13" stroke-width="1.8" stroke-linecap="round"/>
+                <!-- Globos -->
+                <circle cx="12" cy="13" r="4" stroke="#E36B13" stroke-width="1.6"/>
+                <circle cx="20" cy="11" r="4" stroke="#E36B13" stroke-width="1.6"/>
+                <circle cx="28" cy="13" r="4" stroke="#E36B13" stroke-width="1.6"/>
+                <path d="M12 17v5M20 15v7M28 17v5" stroke="#E36B13" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="area-card__title">Cumpleaños</h3>
+            <p class="area-card__desc">Ambientaciones temáticas para todas las edades.</p>
+          </article>
+
+          <!-- 2. Casamientos -->
+          <article class="area-card">
+            <div class="area-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Anillos entrelazados -->
+                <circle cx="15" cy="20" r="7" stroke="#E36B13" stroke-width="1.8"/>
+                <circle cx="25" cy="20" r="7" stroke="#E36B13" stroke-width="1.8"/>
+                <!-- Lazo / moño superior -->
+                <path d="M20 8c-1.5-2-4-2-4 0s2.5 3 4 1c1.5 2 4 2 4 0s-2.5-3-4-1z" stroke="#E36B13" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M20 9v4" stroke="#E36B13" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="area-card__title">Casamientos</h3>
+            <p class="area-card__desc">Diseño y decoración para celebraciones únicas.</p>
+          </article>
+
+          <!-- 3. Eventos Sociales -->
+          <article class="area-card">
+            <div class="area-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Copas brindando -->
+                <path d="M13 8h-4l3 12c0 2 1.5 3.5 4 4v4" stroke="#E36B13" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M27 8h4l-3 12c0 2-1.5 3.5-4 4v4" stroke="#E36B13" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13 8h14" stroke="#E36B13" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M15 32h10" stroke="#E36B13" stroke-width="1.8" stroke-linecap="round"/>
+                <!-- Destello del brindis -->
+                <path d="M20 6v-3M17 7l-2-2M23 7l2-2" stroke="#E36B13" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="area-card__title">Eventos Sociales</h3>
+            <p class="area-card__desc">15 años, aniversarios y reuniones especiales.</p>
+          </article>
+
+          <!-- 4. Eventos Empresariales -->
+          <article class="area-card">
+            <div class="area-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Maletín -->
+                <rect x="6" y="16" width="28" height="18" rx="3" stroke="#E36B13" stroke-width="1.8"/>
+                <path d="M14 16v-3a2 2 0 012-2h8a2 2 0 012 2v3" stroke="#E36B13" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M6 25h28" stroke="#E36B13" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M18 22v6" stroke="#E36B13" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M22 22v6" stroke="#E36B13" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="area-card__title">Eventos Empresariales</h3>
+            <p class="area-card__desc">Ambientación para marcas, empresas y eventos corporativos.</p>
+          </article>
+
+          <!-- 5. Baby Showers y Bautismos -->
+          <article class="area-card">
+            <div class="area-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Osito / bebé -->
+                <circle cx="20" cy="18" r="7" stroke="#E36B13" stroke-width="1.8"/>
+                <!-- Orejas -->
+                <circle cx="13" cy="12" r="3" stroke="#E36B13" stroke-width="1.5"/>
+                <circle cx="27" cy="12" r="3" stroke="#E36B13" stroke-width="1.5"/>
+                <!-- Cara -->
+                <circle cx="17" cy="17" r="1.2" fill="#E36B13"/>
+                <circle cx="23" cy="17" r="1.2" fill="#E36B13"/>
+                <path d="M17 21c0 0 1.5 2 3 0" stroke="#E36B13" stroke-width="1.3" stroke-linecap="round"/>
+                <!-- Pañal / cuerpo -->
+                <path d="M13 25c0 4 3 7 7 7s7-3 7-7" stroke="#E36B13" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="area-card__title">Baby Showers y Bautismos</h3>
+            <p class="area-card__desc">Detalles personalizados para momentos especiales.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== NOSOTROS ==================== -->
+    <section class="about" id="nosotros">
+      <div class="about__img-col">
+        <div class="about__img-placeholder" aria-hidden="true">
+          <span>Fotografía del equipo / estudio</span>
+        </div>
+      </div>
+      <div class="about__content-col">
+        <p class="section__eyebrow">SOBRE DECO BY SU</p>
+        <h2 class="about__heading">Más de 10 años creando experiencias inolvidables.</h2>
+        <p class="about__body">
+          Somos un equipo especializado en decoración y ambientación de eventos. Diseñamos cada espacio con atención al detalle, cuidando cada elemento para que tu evento refleje exactamente lo que imaginaste. Desde reuniones íntimas hasta grandes celebraciones, trabajamos con vos en cada etapa para que solo tengas que disfrutar.
+        </p>
+        <div class="about__pillars">
+
+          <!-- Pasión -->
+          <div class="pillar">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 34S6 25 6 15a8 8 0 0114-5.3A8 8 0 0134 15c0 10-14 19-14 19z"
+                      stroke="#E36B13" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="pillar__label">PASIÓN POR<br>LO QUE HACEMOS</span>
+          </div>
+
+          <!-- Diseño personalizado -->
+          <div class="pillar">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Lápiz creativo -->
+                <path d="M28 6l6 6-18 18H10v-6L28 6z"
+                      stroke="#E36B13" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M24 10l6 6" stroke="#E36B13" stroke-width="1.8" stroke-linecap="round"/>
+                <!-- Destellos de creatividad -->
+                <path d="M6 10l2-4M4 14H8M8 10l-2-4" stroke="#E36B13" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="pillar__label">DISEÑO<br>PERSONALIZADO</span>
+          </div>
+
+          <!-- Compromiso -->
+          <div class="pillar">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Medalla / distinción -->
+                <circle cx="20" cy="16" r="9" stroke="#E36B13" stroke-width="1.8"/>
+                <path d="M14 24l-4 10 10-4 10 4-4-10" stroke="#E36B13" stroke-width="1.8" stroke-linejoin="round"/>
+                <!-- Check interior -->
+                <path d="M15 16l3.5 3.5L25 13" stroke="#E36B13" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="pillar__label">COMPROMISO<br>Y DEDICACIÓN</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIOS ==================== -->
+    <section class="testimonials" id="testimonios">
+      <div class="container">
+        <p class="section__eyebrow">LO QUE DICEN NUESTROS CLIENTES</p>
+
+        <div class="testimonials__grid">
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+            <p class="testimonial-card__text">Cada evento es una historia distinta. Próximamente compartiremos experiencias reales de nuestros clientes.</p>
+            <div class="testimonial-card__author">
+              <div class="author__avatar" aria-hidden="true">✦</div>
+              <span class="author__name">Próximamente</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+            <p class="testimonial-card__text">Estamos preparando esta sección con testimonios reales y fotografías de eventos realizados.</p>
+            <div class="testimonial-card__author">
+              <div class="author__avatar" aria-hidden="true">✦</div>
+              <span class="author__name">Próximamente</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+            <p class="testimonial-card__text">Las opiniones de nuestros clientes estarán disponibles próximamente.</p>
+            <div class="testimonial-card__author">
+              <div class="author__avatar" aria-hidden="true">✦</div>
+              <span class="author__name">Próximamente</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="contacto">
+    <div class="container footer__grid">
+
+      <div class="footer__col">
+        <h4 class="footer__heading">CONTACTO</h4>
+        <ul class="footer__list">
+          <li>
+            <svg class="footer__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+            [Calle y Número]<br>[Piso/Dpto], [Ciudad]
+          </li>
+          <li>
+            <svg class="footer__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+            [Teléfono]
+          </li>
+          <li>
+            <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.556 4.118 1.528 5.845L0 24l6.335-1.502A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.371l-.36-.213-3.728.884.938-3.627-.234-.373A9.818 9.818 0 1112 21.818z"/></svg>
+            WhatsApp
+          </li>
+          <li>
+            <svg class="footer__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+            [Correo Electrónico]
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">HORARIOS DE ATENCIÓN</h4>
+        <p class="footer__hours">Lunes a Viernes<br><strong>[Horario de inicio] a [Horario de cierre] hs</strong></p>
+        <a href="https://wa.me/54XXXXXXXXXX" class="btn btn--whatsapp" target="_blank" rel="noopener">
+          <svg class="icon-wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.556 4.118 1.528 5.845L0 24l6.335-1.502A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.371l-.36-.213-3.728.884.938-3.627-.234-.373A9.818 9.818 0 1112 21.818z"/>
+          </svg>
+          CONSULTAR POR WHATSAPP
+        </a>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">DÓNDE ESTAMOS</h4>
+        <iframe
+          class="footer__map"
+          src="https://maps.google.com/maps?q=[Dirección+URL+Encoded]&output=embed"
+          width="100%"
+          height="220"
+          style="border:0; border-radius:8px; display:block;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación de [Nombre de Empresa]"
+          aria-label="Mapa de ubicación"
+        ></iframe>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>&copy; [AÑO] [Nombre de Empresa]. Todos los derechos reservados.</span>
+        <span>Diseño web profesional</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky bar -->
+  <div class="mobile-sticky" aria-label="Acciones rápidas">
+    <a href="https://wa.me/54XXXXXXXXXX" class="mobile-sticky__btn" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.556 4.118 1.528 5.845L0 24l6.335-1.502A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.371l-.36-.213-3.728.884.938-3.627-.234-.373A9.818 9.818 0 1112 21.818z"/></svg>
+      WhatsApp
+    </a>
+    <a href="tel:0[NÚMERO]" class="mobile-sticky__btn">
+      <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+      Llamar
+    </a>
+    <a href="https://maps.google.com/?q=[Dirección+URL+Encoded]" class="mobile-sticky__btn" target="_blank" rel="noopener">
+      <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+      Ubicación
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
